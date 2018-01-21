@@ -1,4 +1,4 @@
-#' build and publish a website
+#' Build and publish a website
 #'
 #' It uses \code{\link[blogdown]{build_site}} to build the site. It uses
 #' \code{\link[mcdev]{publishdir}} to retrieve the directory of the website. And

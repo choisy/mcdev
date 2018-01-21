@@ -2,7 +2,7 @@
 % Please edit documentation in R/buildsite.R
 \name{buildsite}
 \alias{buildsite}
-\title{build and publish a website}
+\title{Build and publish a website}
 \usage{
 buildsite(message = "update")
 }
