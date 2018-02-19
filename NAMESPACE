@@ -3,5 +3,8 @@
 export(buildsite)
 export(download)
 export(publishdir)
+export(rld)
 importFrom(blogdown,build_site)
+importFrom(devtools,inst)
+importFrom(devtools,reload)
 importFrom(readtext,readtext)
