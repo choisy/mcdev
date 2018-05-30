@@ -11,13 +11,10 @@
 #'
 #' @param message character string containing the message of the git commit.
 #'
-#' @importFrom blogdown build_site
-#'
 #' @export
 #'
 #' @author Marc Choisy
 upload_site <- function(message = "update") {
-  build_site()
   system(paste("cd", publishdir(),
                "; git add -A",
                "; git commit -m \"", message, "\"",
