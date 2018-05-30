@@ -17,5 +17,6 @@ publishdir <- function(toml) {
   toml <- readtext(toml, verbosity = 0)
   toml <- strsplit(toml$text, "\n")[[1]]
   toml <- grep("publishDir", toml, value = TRUE)
+  if (length(toml) < 1) return("public")
   strsplit(toml, "\"")[[1]][2]
 }
