@@ -22,7 +22,7 @@
 #' @author Marc Choisy
 #'
 download <- function(url, package, file) {
-  path <- path.package(package)
+  path <- find.package(package)
   destdir <- paste0(path, "/extdata")
   if (!dir.exists(destdir)) dir.create(destdir)
   utils::download.file(url, paste0(destdir, "/", file))
