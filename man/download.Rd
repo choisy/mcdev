@@ -4,7 +4,7 @@
 \alias{download}
 \title{Download a package file from an URL}
 \usage{
-download(url, package, file)
+download(url, package, file, ...)
 }
 \arguments{
 \item{url}{character string containing the URL to download from.}
@@ -14,6 +14,8 @@ to put the downloaded file.}
 
 \item{file}{character string containing the name of the downloaded file
 should be given.}
+
+\item{...}{options passed to utils::download.file().}
 }
 \description{
 In case a raw data file is too big to be contained in a package, a solution

@@ -15,16 +15,18 @@
 #' @param file character string containing the name of the downloaded file
 #'             should be given.
 #'
+#' @param ... options passed to utils::download.file().
+#'
 #' @importFrom utils download.file
 #'
 #' @export
 #'
 #' @author Marc Choisy
 #'
-download <- function(url, package, file) {
+download <- function(url, package, file, ...) {
   path <- find.package(package)
   destdir <- paste0(path, "/extdata")
   if (!dir.exists(destdir)) dir.create(destdir)
-  utils::download.file(url, paste0(destdir, "/", file))
+  utils::download.file(url, paste0(destdir, "/", file, ...))
   invisible(url)
 }
